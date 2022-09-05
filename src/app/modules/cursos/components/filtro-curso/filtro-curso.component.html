@@ -1,0 +1,7 @@
+<box titulo="Filtrar Por Curso">
+  <select class="form-control" (change)="onFilter($event.target.value)" name="selectCurso" id="">
+    <option value="" selected>Ver todos los Cursos</option>
+    <option *ngFor="let curso of cursos" value="{{curso.id}}">{{curso.CursoDivision}}</option>
+
+  </select>
+</box>

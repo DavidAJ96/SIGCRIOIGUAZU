@@ -1,0 +1,16 @@
+<app-content-header titulo="Cursos" descripcion="Administrar Información de los cursos"></app-content-header>
+<div class="content">
+  <div class="row">
+    <div class="col-md-2">
+      <box titulo="Estado">
+        <select class="form-control" (change)="setFilter('estado',$event.target.value)">
+          <option value="ACTIVO">ACTIVO</option>
+          <option value="NO ACTIVO">NO ACTIVO</option>
+        </select>
+      </box>
+    </div>
+    <div class="col-md-10">
+      <app-window-list titulo="Listado de Cursos" btnAddText="Agregar Curso" [dtOptions]="dtOptions"></app-window-list>
+    </div>
+  </div>
+</div>

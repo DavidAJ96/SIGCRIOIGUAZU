@@ -1,0 +1,16 @@
+<app-content-header titulo="Alumnos" descripcion="Información personal del alumno" ></app-content-header>
+
+<div class="content">
+
+
+  <div class="row ">
+    <div class="col-md-2 ">
+      <box-filtro-curso (onChange)="setFilter('curso',$event)"></box-filtro-curso>
+    </div>
+    <div class="col-md-10  ">
+      <app-window-list titulo="Listado de Alumnos" btnAddText="Agregar Alumno" btnAddIcon="user-plus"  [dtOptions]="dtOptions"></app-window-list>
+    </div>
+  </div>
+
+
+</div>

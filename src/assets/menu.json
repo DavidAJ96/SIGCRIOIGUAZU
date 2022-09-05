@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Inicio",
+        "icon": "home",
+        "link": "home",
+        "children": []
+    },
+    {
+      "name": "Estadisticas",
+      "icon": "bar-chart",
+      "link": "home/estadisticas",
+      "children": []
+    },
+
+    {
+        "name": "Gestión de Alumnos",
+        "icon": "users",
+        "link": "",
+        "children": [
+            {
+                "name": "Datos Personales",
+                "link": "alumnos"
+            },
+            {
+                "name": "Matriculacion",
+                "link": "matriculacion"
+            }
+        ]
+    },
+    {
+        "name": "Gestión de Agentes",
+        "icon": "user-secret",
+        "link": "",
+        "children": [
+            {
+                "name": "Datos Personales",
+                "link": "agentes"
+            }
+        ]
+    },
+    {
+        "name": "Cursos",
+        "icon": "archive",
+        "link": "cursos",
+        "children": [
+
+        ]
+    },
+    {
+        "name": "Cargos",
+        "icon": "briefcase",
+        "link": "cargos",
+        "children": [
+
+        ]
+    },
+    {
+        "name": "Calificaciones",
+        "icon": "book",
+        "link": "calificaciones",
+        "children": [
+
+        ]
+    },
+    {
+        "name": "Usuarios",
+        "icon": "users",
+        "link": "users",
+        "children": [
+            {
+                "name": "Lista de Usuarios",
+                "link": "usuarios"
+            },
+            {
+                "name": "Niveles de Acceso",
+                "link": "niveles_acceso"
+            }
+        ]
+    },
+    {
+        "name": "Configuracion",
+        "icon": "cogs",
+        "link": "cursos",
+        "children": [
+            {
+                "name": "Datos de Institución",
+                "link": "institucion"
+            }
+        ]
+    },
+    {
+        "name": "Reportes",
+        "icon": "print",
+        "link": "cursos",
+        "children": [
+          {
+            "name": "Boletin Digital",
+            "link": "calificaciones/calificador_indiv"
+          },
+          {
+            "name": "Calificador",
+            "link": "calificaciones/calificadores"
+          }
+        ]
+    }
+]
