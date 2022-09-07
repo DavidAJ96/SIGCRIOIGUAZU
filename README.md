@@ -1,6 +1,7 @@
-# Sigc
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.1.
+# SISTEMA DE GESTION ESCOLAR
+Este sistema permite la administracion de las escuelas secundarias a partir de la gestion de agentes y alumnos vinculados a la misma. 
+Tambien, este sistema es un vinculo de comunicación entre la familia del estudiante y la misma institucion
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.1 and NPM 6.0.
 
 ## Development server
 
