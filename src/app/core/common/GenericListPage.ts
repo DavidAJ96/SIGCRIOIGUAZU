@@ -49,6 +49,7 @@ export abstract class GenericListPage<T,K> implements OnInit  {
        this.servicio.paginator.per_page = dataTablesParameters.length
        this.servicio.search = dataTablesParameters.search.value
         this.servicio.findAll().subscribe(resp => {
+
             callback({
               recordsTotal:this.servicio.paginator.total -15,
               recordsFiltered: this.servicio.paginator.total,

@@ -19,25 +19,25 @@ export class AlumnosComponent extends GenericListPage<Alumno,number> {
      this.columns = [
       {
         title:'documento',
-        data:'documento'
+        data:'perfil.documento'
       },
       {
         title:'Apellido y Nombre',
-        data:'ApellidoNombre'
+        data:'perfil.ApellidoNombre'
       },
       {
         title:'domicilio',
-        data:'domicilio',
+        data:'perfil.domicilio',
         orderable:false
       },
       {
         title:'Localidad',
-        data:'localidad',
+        data:'perfil.localidad.localidad',
         orderable:false
       },
       {
         title:'Teléfono',
-        data:'telefono',
+        data:'perfil.telefono',
         orderable:false
       },
       {

@@ -77,7 +77,7 @@ export abstract class CrudService<T, ID> implements CrudOperations<T, ID> {
         return res.data
       }
 
-      return res.data.map(obj=>{return Object.assign(this.modelo.getInstance(),obj)});
+      return res.data.map(obj=>{return this.modelo.getInstance(obj)});
     }))
   }
 

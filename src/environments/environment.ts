@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   appName:'SIGC-PNA RIO IGUAZU',
   footerCopiryght:'',
-  api:'http://api.siesc.com.ar'
+  api:'http://localhost:8000/api'
 };
 
 /*
