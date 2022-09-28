@@ -13,15 +13,18 @@ export class CursosComponent  extends GenericListPage<Curso,number>{
     this.columns = [
       {
         title:'Curso',
-        data:'curso'
+        data:'anio_escolar.anio',
+        className:'col-md-2 text-center'
       },
       {
         title:'Division',
-        data:'division'
+        data:'division',
+        className:'col-md-2 text-center'
       },
       {
         title:'Orientacion',
-        data:'nombre_orientacion'
+        data:'anio_escolar.plan_estudio.nombre_plan',
+        className:'col-md-4 '
       },
       {
         title:'Estado',

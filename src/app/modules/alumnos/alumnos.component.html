@@ -5,7 +5,7 @@
 
   <div class="row ">
     <div class="col-md-2 ">
-      <box-filtro-curso (onChange)="setFilter('curso',$event)"></box-filtro-curso>
+      <box-filtro-curso (onChange)="setFilter('id_curso',$event)"></box-filtro-curso>
     </div>
     <div class="col-md-10  ">
       <app-window-list titulo="Listado de Alumnos" btnAddText="Agregar Alumno" btnAddIcon="user-plus"  [dtOptions]="dtOptions"></app-window-list>

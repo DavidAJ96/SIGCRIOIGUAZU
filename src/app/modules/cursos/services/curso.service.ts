@@ -10,5 +10,22 @@ export class CursoService extends CrudService<Curso,number> {
 
   constructor(http: HttpClient) {
     super(http,'cursos',Curso);
+    this.setFilter('orderby','anio_escolar.anio')
   }
+
+  sort(cursos: Curso[]){
+    return cursos.sort((cursoAnt,CursoSig)=>{
+      if(cursoAnt.CursoDivision < CursoSig.CursoDivision){
+        return -1;
+      }
+      else if(cursoAnt.CursoDivision  > CursoSig.CursoDivision){
+        return 1;
+      }
+      else{
+        return 0;
+      }
+  });
+
+  }
+
 }

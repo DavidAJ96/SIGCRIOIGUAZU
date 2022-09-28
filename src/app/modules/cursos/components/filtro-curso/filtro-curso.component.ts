@@ -21,7 +21,7 @@ export class FiltroCursoComponent implements OnInit {
     this.servicio.setFilter('estado','activo')
     this.isLoading = true;
     this.servicio.findAll().subscribe(cursos=>{
-      this.cursos = cursos
+      this.cursos = this.servicio.sort(cursos);
     })
   }
 
