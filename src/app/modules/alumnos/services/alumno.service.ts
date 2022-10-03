@@ -10,6 +10,7 @@ export class AlumnoService extends CrudService<Alumno,number> {
 
   constructor( http: HttpClient) {
     super(http,'alumnos',Alumno)
+    this.setFilter('orderby','persona.apellidos')
    }
 
 }

@@ -34,7 +34,8 @@
               "node_modules/admin-lte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",
               "node_modules/admin-lte/bower_components/bootstrap-daterangepicker/daterangepicker.css",
               "node_modules/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css",
-              "node_modules/datatables.net-bs/css/dataTables.bootstrap.min.css"
+              "node_modules/datatables.net-bs/css/dataTables.bootstrap.min.css",
+              "node_modules/@ng-select/ng-select/themes/default.theme.css"
             ],
             "scripts": [
               "node_modules/admin-lte/bower_components/jquery/dist/jquery.min.js",

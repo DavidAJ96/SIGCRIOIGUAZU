@@ -4,12 +4,12 @@
     <button *ngIf="this.btnAdd" class="btn btn-sm btn-success pull-right"><i class="fa fa-{{btnAddIcon}}"></i> {{btnAddText}}</button>
   </div>
   <div class="box-body">
-    <div class="table-responsive">
-      <table id="datatable" datatable [dtOptions]="dtOptions" style="width: 100%;" class="row-border hover table table-bordered table-striped table-hover">
+    <div class="table-responsive" >
+      <table id="datatable"   #midata datatable [dtOptions]="dtOptions" style="width: 100%;" class="row-border hover table table-bordered table-striped table-hover">
 
       </table>
     </div>
 
-    <button class="btn btn-success btn-sm"><i class="fa fa-print"></i>Imprimir</button>
+    <button (click)="exportPDF()" class="btn btn-success btn-sm"><i class="fa fa-print"></i>Imprimir</button>
   </div>
 </div>

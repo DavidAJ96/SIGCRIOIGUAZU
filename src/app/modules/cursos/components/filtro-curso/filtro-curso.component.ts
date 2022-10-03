@@ -12,6 +12,7 @@ export class FiltroCursoComponent implements OnInit {
   @Output() onChange = new EventEmitter<number>()
   cursos: Curso[] = [];
   isLoading: Boolean = false;
+  private _value:string;
   constructor(
     private servicio: CursoService
   ) { }
@@ -25,9 +26,26 @@ export class FiltroCursoComponent implements OnInit {
     })
   }
 
-  onFilter(value){
-
-    this.onChange.emit(value)
+  onFilter(evnt){
+     this.onChange.emit(evnt)
   }
+
+
+    /**
+     * Getter value
+     * @return {string}
+     */
+	public get value(): string {
+		return this._value;
+	}
+
+    /**
+     * Setter value
+     * @param {string} value
+     */
+	public set value(value: string) {
+		this._value = value;
+    this.onFilter(value)
+	}
 
 }

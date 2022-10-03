@@ -1,10 +1,10 @@
-import { Perfil } from '../../persona/models/perfil';
+import { Persona } from '../../persona/models/persona';
 
 export class Agente {
   private _id: number;
   private _id_persona: string;
   private _fecha_ingreso: string;
-  private _persona: Perfil;
+  private _persona: Persona;
   private _created_at: null;
   private _updated_at: null;
   private _deleted_at: null;
@@ -13,7 +13,7 @@ export class Agente {
     id: number,
     id_persona: string,
     fecha_ingreso: string,
-    persona: Perfil,
+    persona: Persona,
     created_at: null,
     updated_at: null,
     deleted_at: null
@@ -32,7 +32,7 @@ export class Agente {
       obj['id'],
       obj['id_persona'],
       obj['fecha_ingreso'],
-      Perfil.getInstance(obj['persona']),
+      Persona.getInstance(obj['persona']),
       obj['created_at'],
       obj['updated_at'],
       obj['deleted_at']
@@ -65,9 +65,9 @@ export class Agente {
 
   /**
    * Getter persona
-   * @return {Perfil}
+   * @return {Persona}
    */
-  public get persona(): Perfil {
+  public get persona(): Persona {
     return this._persona;
   }
 
@@ -121,9 +121,9 @@ export class Agente {
 
   /**
    * Setter persona
-   * @param {Perfil} value
+   * @param {Persona} value
    */
-  public set persona(value: Perfil) {
+  public set persona(value: Persona) {
     this._persona = value;
   }
 

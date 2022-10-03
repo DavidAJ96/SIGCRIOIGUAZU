@@ -1,4 +1,4 @@
-import { Perfil } from "../../persona/models/perfil";
+import { Persona } from "../../persona/models/persona";
 
 export class Alumno {
 
@@ -7,14 +7,14 @@ export class Alumno {
   public libro: string;
   public folio: string;
   public estado: string
-  public persona: Perfil
-  constructor(id: number, legajo: string, libro: string,folio:string,persona: Perfil, estado:string){
+  public persona: Persona
+  constructor(id: number, legajo: string, libro: string,folio:string,persona: Persona, estado:string){
     this.id = id;
     this.legajo = legajo;
     this.libro = libro,
     this.folio = folio
     this.estado = estado
-    this.persona = Perfil.getInstance(persona);
+    this.persona = Persona.getInstance(persona);
   }
 
   static getInstance(obj: Object){

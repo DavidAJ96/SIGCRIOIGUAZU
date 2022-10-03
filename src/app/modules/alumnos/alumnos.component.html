@@ -8,7 +8,7 @@
       <box-filtro-curso (onChange)="setFilter('id_curso',$event)"></box-filtro-curso>
     </div>
     <div class="col-md-10  ">
-      <app-window-list titulo="Listado de Alumnos" btnAddText="Agregar Alumno" btnAddIcon="user-plus"  [dtOptions]="dtOptions"></app-window-list>
+      <app-window-list (btnExportPDF)="exportPDF()" titulo="Listado de Alumnos" btnAddText="Agregar Alumno" btnAddIcon="user-plus"  [dtOptions]="dtOptions"></app-window-list>
     </div>
   </div>
 

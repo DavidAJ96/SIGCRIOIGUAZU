@@ -4,6 +4,7 @@ import { ContentHeaderComponent } from './components/content-header/content-head
 import { DataTablesModule } from 'angular-datatables';
 import { BoxComponent } from './components/box/box.component';
 import { WindowListComponent } from './components/window-list/window-list.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 
@@ -11,8 +12,9 @@ import { WindowListComponent } from './components/window-list/window-list.compon
   declarations: [ContentHeaderComponent, BoxComponent, WindowListComponent],
   imports: [
     CommonModule,
-    DataTablesModule
+    DataTablesModule,
+    NgSelectModule
   ],
-  exports: [ContentHeaderComponent,DataTablesModule,BoxComponent, WindowListComponent]
+  exports: [ContentHeaderComponent,DataTablesModule,BoxComponent, WindowListComponent,NgSelectModule]
 })
 export class SharedModule { }
